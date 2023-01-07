@@ -192,7 +192,19 @@
     }
   }
 }
+#values {
+  position: relative;
+}
 
+#values::after {
+    content: url(../../image/Ellipse.svg);
+    position: absolute;
+    left: -338px;
+    top: -205px;
+    @include resposive(mobileMd) {
+      display: none;
+    }
+}
 /********** FAQs **********/
 .faqs {
   padding-bottom: 16rem;
