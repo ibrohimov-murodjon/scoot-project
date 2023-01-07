@@ -23,14 +23,11 @@
           margin-bottom: 4rem;
         }
       }
-      .footer__store {
-        width: 100%;
-        max: width 359px;
-        @include flex;
-        .store:not(first-child) {
-          margin-left: 1.8rem;
-        }
-      }
+    }
+    .footer__store {
+      display: flex;
+      align-items: center;
+      gap: 1.286rem;
     }
   }
 }
@@ -65,6 +62,7 @@
         margin-left: 3.2rem;
         @include resposive(mobileMd) {
           margin-left: 0;
+          margin-top: 1.6rem;
         }
       }
       &__link {

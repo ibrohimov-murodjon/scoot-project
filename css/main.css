@@ -527,7 +527,7 @@ p {
 }
 @media screen and (max-width: 594px) {
   .header .hamburg__open-btn {
-    margin-right: 35%;
+    margin-right: 30%;
   }
 }
 
@@ -1162,14 +1162,10 @@ p {
     margin-bottom: 4rem;
   }
 }
-.footer__top-container .footer__info .footer__store {
-  width: 100%;
-  max: width 359px;
+.footer__top-container .footer__store {
   display: flex;
   align-items: center;
-}
-.footer__top-container .footer__info .footer__store .store:not(first-child) {
-  margin-left: 1.8rem;
+  gap: 1.286rem;
 }
 
 .footer__bottom {
@@ -1214,6 +1210,7 @@ p {
 @media screen and (max-width: 594px) {
   .footer__bottom-container .footernav__item:not(:first-child) {
     margin-left: 0;
+    margin-top: 1.6rem;
   }
 }
 .footer__bottom-container .footernav__link {
