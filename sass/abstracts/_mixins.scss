@@ -1,0 +1,64 @@
+@mixin starter {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin font($wight, $size, $line, $color) {
+  font-weight: $wight;
+  font-size: $size;
+  line-height: $line;
+  color: $color;
+}
+
+@mixin headings($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin paragraph ($font-family, $p-weight, $p-size, $p-line, $p-color) {
+  font-family: $font-family;
+  font-weight: $p-weight;
+  font-size: $p-size;
+  line-height: $p-line;
+  color: $p-color;
+}
+
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin resposive ($ScreenSize) {
+  @if $ScreenSize == tabletLg {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }@else if $ScreenSize == tabletMode {
+    @media screen and (max-width: 973px) {
+      @content;
+    }
+  } @else if $ScreenSize == tabletMd {
+    @media screen and (max-width: 924px) {
+      @content;
+    }
+  } @else if $ScreenSize == tabletSm {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $ScreenSize == mobileLg {
+    @media screen and (max-width: 700px) {
+      @content;
+    }
+  }  @else if $ScreenSize == mobileMd {
+    @media screen and (max-width: 594px) {
+      @content;
+    }
+  }
+}

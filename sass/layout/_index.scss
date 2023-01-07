@@ -1,0 +1,468 @@
+/********** Home **********/
+.home {
+  padding-top: 15.3rem;
+  padding-bottom: 15.2rem;
+  background: linear-gradient(rgba(47, 59, 89, 0.75),rgba(47, 59, 89, 0.75)), url(../../image/Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center  center;
+  position: relative;
+  @include resposive(tabletSm) {
+    padding-top: 13.7rem;
+    padding-bottom: 25.7rem;
+    background-position: 78%  0;
+  }
+  @include resposive(mobileMd) {
+    padding-bottom: 17.9rem;
+    background-position: 98%  0;
+  }
+
+    &::after {
+      content: ' ';
+      width: 100%;
+      max-width: 202.5px;
+      min-height: 15px;
+      background: url(../../image/VectotHero.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      position: absolute;
+      top: 349px;
+      left: -0.5%;
+      @include resposive(tabletLg) {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: ' ';
+      width: 100%;
+      max-width: 448px;
+      min-height: 140px;
+      background: url(../../image/VectotHeroArrow.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      position: absolute;
+      top: 349px;
+      left: 51%;
+      z-index: 1;
+      @include resposive(tabletMd) {
+        top: 560px;
+        left: -250px;
+      }
+      @include resposive(tabletSm) {
+        top: 550px;
+        left: -200px;
+      }
+      @include resposive(mobileMd) {
+        top: 546px;
+        left: -65%;
+      }
+    }
+
+    &__info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      @include resposive(tabletMd) {
+        width: 60%;
+      }
+      @include resposive(tabletSm) {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      width: 100%;
+      max-width: 500px;
+      color: $primary-white;
+      align-self: flex-start;
+      @include resposive(tabletSm) {
+        max-width: 573px;
+        align-self: center;
+      }
+      @include resposive(mobileLg) {
+       max-width: 311px;
+       align-self: center;
+       font-size: $h1-responsive-size-lg;
+       letter-spacing: $h1-responsive-spacing-lg;
+      }
+    }
+
+    &__desc-btn {
+      margin-top: 4rem;
+    }
+
+    &__desc-text {
+      width: 100%;
+      max-width: 405px;
+      color: $primary-white;
+      @include resposive(tabletSm) {
+        max-width: 573px;
+      }
+      @include resposive(mobileLg) {
+        max-width: 311px;
+      }
+    }
+
+    &__btn {
+      margin-top: 4rem;
+    }
+}
+
+/********** Services **********/
+.services {
+  padding-top: 16rem;
+  padding-bottom: 14.7rem;
+  position: relative;
+  @include resposive(tabletSm) {
+    padding-top: 12.2rem;
+    padding-bottom: 9.2rem;
+  }
+
+    &::after {
+      content: "";
+      width: 100%;
+      max-width: 70%;
+      min-height: 15px;
+      background: $light-gray;
+      position: absolute;
+      top: 200px;
+      left: 0;
+      z-index: -1;
+      @include resposive(tabletLg) {
+        max-width: 60%;
+      }
+      @include resposive(tabletSm) {
+        max-width: 785px;
+        transform: rotate(90deg);
+        left: -274px;
+      }
+      @include resposive(mobileLg) {
+        display: none;
+      }
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 3rem;
+      @include resposive(tabletSm) {
+        grid-template-columns: repeat(auto-fit, minmax(573px, 1fr));
+      }
+      @include resposive(mobileLg) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        place-items: center center;
+        row-gap: 4.8rem;
+        text-align: center;
+      }
+    }
+
+    &__card {
+      width: 100%;
+      max-width: 350px;
+
+      @include resposive(tabletSm) {
+        max-width: 573px;
+        display: flex;
+        align-items: center;
+        gap: 7.9rem;
+      }
+      @include resposive(mobileLg) {
+        max-width: 311px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+      }
+
+      &-head {
+        width: 100%;
+        max-width: 96px;
+        min-height: 96px;
+        background: $yellov;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img {
+          max-width: 42.5px;
+          min-width: 39px;
+        }
+
+        @include resposive(mobileLg) {
+          & {
+            max-width: 56px;
+            min-height: 56px;
+          }
+          & img {
+            max-width: 25px;
+            min-width: 19px;
+          }
+        }
+      }
+      &-body {
+        margin-top: 4rem;
+        @include resposive(mobileLg) {
+          margin-top: 0;
+        }
+      }
+      &-title {
+        width: 100%;
+        color: $dark-navy;
+        @include resposive(mobileLg) {
+          font-size: $h4-responsive-size;
+        }
+      }
+
+      &-desc {
+        width: 100%;
+        margin-top: 2.7rem;
+      }
+    }
+
+
+}
+
+/********** Reverse **********/
+.reverse {
+  padding-top: 5.3rem;
+  padding-bottom: 1.7rem;
+  background: url(../../image/Ellipse.svg), url(../../image/Ellipse.svg), url(../../image/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: 445px 445px, 445px 445px, 445px 445px;
+  background-position: 1266px 45px, -350px 523px, 1253px 993px;
+
+  &__container {
+    @include resposive(mobileLg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8.3rem;
+    position: relative;
+    @include resposive(tabletMode) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 5.6rem;
+    }
+    @include resposive(mobileLg) {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  &__info {
+    @include resposive(tabletMode) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @include resposive(mobileLg) {
+      width: 100%;
+      max-width: 311px;
+    }
+  }
+  &__content:not(:last-child) {
+    margin-bottom: 2.6rem;
+  }
+  &__content:nth-child(2n) {
+    flex-direction: row-reverse;
+    @include resposive(tabletMode) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__content:nth-child(2n) .reverse__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include resposive(tabletMode) {
+      align-items: center;
+    }
+  }
+  &__content:nth-child(2n) .reverse__info .reverse__btn {
+    align-self: flex-start;
+    @include resposive(tabletMode) {
+      align-self: center;
+    }
+  }
+  &__content > div {
+    width: 50%;
+    @include resposive(tabletMode) {
+      width: 100%;
+    }
+  }
+  &__content:first-child::after {
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    content: " ";
+    width: 100%;
+    max-width: 50vw;
+    height: 200px;
+    background: url(../../image/bigarrowleft.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    @include resposive(tabletMode) {
+      top: 176px;
+      left: 160px;
+      width: 100%;
+      max-width: 50vw;
+    }
+    @include resposive(mobileLg) {
+      top: 166px;
+      left: 21px;
+      width: 100%;
+      max-width: 100vw;
+      background-position: -1px 0;
+      background-size: 177%;
+    }
+    @include resposive(mobileMd) {
+      top: 166px;
+      left: 21px;
+      width: 100%;
+      max-width: 100vw;
+      background-position: -1px 0;
+      background-size: 177%;
+    }
+  }
+
+  &__content:nth-child(2n)::after {
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    content: " ";
+    width: 55%;
+    max-width: 35vw;
+    height: 200px;
+    background: url(../../image/bigarrowright.svg);
+    background-repeat: no-repeat;
+    background-position: -73px 2px;
+    background-size: contain;
+    @include resposive(tabletMode) {
+      width: 45%;
+      max-width: 45vw;
+      top: 30px;
+      left: 54px;
+      background-position: -33px 2px;
+    }
+    @include resposive(mobileLg) {
+      width: 100%;
+      max-width: 100vw;
+      top: -1px;
+      left: -19px;
+      background-position: -448px -3px;
+      background-size: 184%;
+    }
+    @include resposive(mobileMd) {
+      width: 100%;
+      max-width: 100vw;
+      top: -1px;
+      left: -19px;
+      background-position: -384px -3px;
+      background-size: 184%;
+    }
+  }
+
+  &__content:last-child::after {
+    position: absolute;
+    top: 205px;
+    left: 40%;
+    content: " ";
+    width: 100%;
+    max-width: 59vw;
+    height: 200px;
+    background: url(../../image/bigarrowleft.svg);
+    background-repeat: no-repeat;
+    background-position: 55px 42px;
+    background-size: contain;
+    @include resposive(tabletMode) {
+      top: 54px;
+      left: 261px;
+      width: 50%;
+      max-width: 40vw;
+      background-position: 176px 33px;
+    }
+    @include resposive(tabletSm) {
+      top: 54px;
+      left: 261px;
+      width: 60%;
+      max-width: 50vw;
+      background-position: 101px 33px;
+    }
+    @include resposive(mobileLg) {
+      top: 54px;
+      left: 160px;
+      width: 50%;
+      max-width: 50vw;
+      background-position: 20px -4px;
+      background-size: 330%;
+    }
+    @include resposive(mobileMd) {
+      top: 54px;
+      left: 160px;
+      width: 50%;
+      max-width: 50vw;
+      background-position: 20px -4px;
+      background-size: 330%;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 445px;
+    color: $dark-navy;
+    @include resposive(mobileLg) {
+      max-width: 300px;
+      font-size: $h2-responsive-size;
+    }
+  }
+  &__desc {
+    width: 100%;
+    max-width: 445px;
+    margin-top: 2.4rem;
+    @include resposive(mobileLg) {
+      max-width: 311px;
+    }
+  }
+  &__btn {
+    margin-top: 4rem;
+  }
+  &__img {
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    @include resposive(tabletMode) {
+      width: 335px;
+      height: 335px;
+      margin: 0 auto;
+    }
+    @include resposive(mobileLg) {
+      width: 311px;
+      height: 311px;
+    }
+    @include resposive(mobileMd) {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

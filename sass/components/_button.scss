@@ -1,0 +1,21 @@
+.btn {
+  max-width: 182px;
+  background-color: $yellov;
+  border: 1px solid $yellov;
+  padding: 1.4rem 3.9rem;
+  @include font($font-weight-lg, $btn-size, $btn-line, $primary-white);
+  @include transition;
+  &:hover {
+    background: $primary-white;
+    color: $yellov;
+  }
+}
+
+.toggle__btn {
+  display: none;
+  border: none;
+  background: transparent;
+  @include resposive(mobileLg) {
+    display: block;
+  }
+}

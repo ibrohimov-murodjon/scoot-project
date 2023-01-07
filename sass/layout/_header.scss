@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 2.1rem 0;
+  background-color: $primary-white;
+  z-index: 10;
+
+  &__container {
+    @include flex;
+    @include resposive(mobileLg) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    @include resposive(mobileMd) {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+  }
+
+  .hamburg__open-btn {
+    @include resposive(mobileMd) {
+      margin-right: 35%;
+    }
+  }
+}

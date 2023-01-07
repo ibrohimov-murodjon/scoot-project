@@ -1,0 +1,54 @@
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/space-mono-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/space-mono-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $main-font-family;
+  font-weight: $font-weight-lg;
+  line-height: $body-line;
+  font-size: $body-font-size;
+  color: $dim-gray;
+}
+
+h1 {
+  @include headings($font-weight-lg, $h1-size, $h1-line, $h1-spacing);
+  margin: 0;
+}
+
+h2 {
+  @include headings($font-weight-lg, $h2-size, $h2-line, $h2-spacing);
+  margin: 0;
+}
+
+h3 {
+  @include headings($font-weight-lg, $h3-size, $h3-line, $h3-spacing);
+  margin: 0;
+}
+
+h4 {
+  @include headings($font-weight-lg, $h4-size, $h4-line, $h4-spacing);
+  margin: 0;
+}
+
+p {
+  @include paragraph ($main-font-family-p, $font-weight-md, $body-font-size, $body-line, $dim-gray);
+}

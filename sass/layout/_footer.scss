@@ -1,0 +1,98 @@
+.footer__top {
+  padding: 10.2rem 0;
+  background: url("../../image/EllipseGroup.svg"), $dark-navy;
+  background-repeat: no-repeat;
+  background-size: 1153px 147px;
+  background-position: right -124px bottom;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include resposive(tabletMd) {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .footer__info {
+      .footer__title {
+        width: 100%;
+        max-width: 445px;
+        color: $primary-white;
+        @include resposive(tabletMd) {
+          margin-bottom: 4rem;
+        }
+      }
+      .footer__store {
+        width: 100%;
+        max: width 359px;
+        @include flex;
+        .store:not(first-child) {
+          margin-left: 1.8rem;
+        }
+      }
+    }
+  }
+}
+.footer__bottom {
+  padding-top: 3.5rem;
+  padding-bottom: 3.244rem;
+  background-color: $responsive-bg;
+
+  &-container {
+    @include flex;
+    @include resposive(mobileMd) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .footernav {
+      margin-left: 5.858rem;
+      @include resposive(mobileMd) {
+        margin-top: 4.144rem;
+        margin-left: 0;
+        text-align: center
+      }
+      &__list {
+        @include flex;
+        @include resposive(mobileMd) {
+          width: 100%;
+          max-width: 84px;
+          flex-direction: column;
+        }
+      }
+      &__item:not(:first-child) {
+        margin-left: 3.2rem;
+        @include resposive(mobileMd) {
+          margin-left: 0;
+        }
+      }
+      &__link {
+        @include font($font-weight-lg, $link-font-size, $body-line, $dim-gray);
+        @include transition;
+        &:hover {
+          color: $yellov;
+        }
+      }
+    }
+
+    .socials {
+      margin-left: auto;
+      @include resposive(mobileMd) {
+        margin-top: 8.5rem;
+        margin-left: 0;
+      }
+      @include flex;
+      &__item:not(:first-child) {
+        margin-left: 2.4rem;
+      }
+      &__link {
+        color: $yellov;
+        @include transition;
+      }
+      &__link:hover {
+        color: $snow;
+      }
+    }
+  }
+}
