@@ -297,20 +297,26 @@
       text-align: center;
     }
   }
-  &__content:nth-child(2n) .reverse__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    @include resposive(tabletMode) {
-      align-items: center;
+  &__content:nth-child(2n) {
+    .reverse__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      @include resposive(tabletMode) {
+        align-items: center;
+      }
     }
   }
-  &__content:nth-child(2n) .reverse__info .reverse__btn {
-    align-self: flex-start;
-    @include resposive(tabletMode) {
-      align-self: center;
+&__content:nth-child(2n) {
+  .reverse__info {
+    .reverse__btn {
+      align-self: flex-start;
+      @include resposive(tabletMode) {
+        align-self: center;
+      }
     }
   }
+}
   &__content > div {
     width: 50%;
     @include resposive(tabletMode) {
