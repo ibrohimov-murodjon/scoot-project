@@ -22,7 +22,7 @@
       padding-right: 2.2rem;
       padding-bottom: 2.4rem;
       transition: all 0.2s ease-in-out;
-      transform: translateX(-100%)
+      transform: translateX(-100%);
     }
 
     .sitenav {
@@ -71,11 +71,11 @@
 
   #mute #hamburgclose {
     display: none;
-}
-#mute.playing #hamburgclose {
+  }
+  #mute.playing #hamburgclose {
     display: block;
-}
-#mute.playing #hamburgopen {
+  }
+  #mute.playing #hamburgopen {
     display: none;
-}
+  }
 }

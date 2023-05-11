@@ -1,10 +1,11 @@
 /******** About ********/
 #location {
   padding: 7.2rem 0;
-  background: linear-gradient(rgba(47, 59, 89, 0.75),rgba(47, 59, 89, 0.75)), url(../../image/CoreersLocationBg.jpg);
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url(../../image/CoreersLocationBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center  center;
+  background-position: center center;
   position: relative;
   &::after {
     content: url(../../image/OvalGroup.svg);
@@ -33,33 +34,33 @@
       background-size: contain;
       background-position: center center;
       @include resposive(mobileMd) {
-      background: url(../../image/MobileLocate.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center center;
-      min-height: 152px;
-      }
-  }
-  .location__citiy {
-    display: none;
-    @include resposive(mobileMd) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.6rem;
-      margin-top: 6.2rem;
-
-      .location__title {
-        width: 100%;
-        max-width: 311px;
-        padding: 2.2rem 0;
-        text-align: center;
-        background: $location-title-bg;
-        color: $dark-navy;
+        background: url(../../image/MobileLocate.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        min-height: 152px;
       }
     }
-  }
+    .location__citiy {
+      display: none;
+      @include resposive(mobileMd) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        margin-top: 6.2rem;
+
+        .location__title {
+          width: 100%;
+          max-width: 311px;
+          padding: 2.2rem 0;
+          text-align: center;
+          background: $location-title-bg;
+          color: $dark-navy;
+        }
+      }
+    }
   }
 }
 
@@ -100,5 +101,4 @@
       margin-left: 0;
     }
   }
-
 }

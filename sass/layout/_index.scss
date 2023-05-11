@@ -2,118 +2,119 @@
 .home {
   padding-top: 15.3rem;
   padding-bottom: 15.2rem;
-  background: linear-gradient(rgba(47, 59, 89, 0.75),rgba(47, 59, 89, 0.75)), url(../../image/Hero.jpg);
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url(../../image/Hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center  center;
+  background-position: center center;
   position: relative;
   @include resposive(tabletSm) {
     padding-top: 13.7rem;
     padding-bottom: 25.7rem;
-    background-position: 78%  0;
+    background-position: 78% 0;
   }
   @include resposive(mobileMd) {
     padding-bottom: 17.9rem;
-    background-position: 98%  0;
+    background-position: 98% 0;
   }
 
-    &::after {
-      content: ' ';
-      width: 100%;
-      max-width: 202.5px;
-      min-height: 15px;
-      background: url(../../image/VectotHero.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      position: absolute;
-      top: 349px;
-      left: -0.5%;
-      @include resposive(tabletLg) {
-        display: none;
-      }
+  &::after {
+    content: " ";
+    width: 100%;
+    max-width: 202.5px;
+    min-height: 15px;
+    background: url(../../image/VectotHero.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 349px;
+    left: -0.5%;
+    @include resposive(tabletLg) {
+      display: none;
     }
+  }
 
-    &::before {
-      content: ' ';
-      width: 100%;
-      max-width: 448px;
-      min-height: 140px;
-      background: url(../../image/VectotHeroArrow.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      position: absolute;
-      top: 349px;
-      left: 51%;
-      z-index: 1;
-      @include resposive(tabletMd) {
-        top: 560px;
-        left: -250px;
-      }
-      @include resposive(tabletSm) {
-        top: 550px;
-        left: -200px;
-      }
-      @include resposive(mobileMd) {
-        top: 546px;
-        left: -65%;
-      }
+  &::before {
+    content: " ";
+    width: 100%;
+    max-width: 448px;
+    min-height: 140px;
+    background: url(../../image/VectotHeroArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 349px;
+    left: 51%;
+    z-index: 1;
+    @include resposive(tabletMd) {
+      top: 560px;
+      left: -250px;
     }
+    @include resposive(tabletSm) {
+      top: 550px;
+      left: -200px;
+    }
+    @include resposive(mobileMd) {
+      top: 546px;
+      left: -65%;
+    }
+  }
 
-    &__info {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
+  &__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    @include resposive(tabletMd) {
+      width: 60%;
+    }
+    @include resposive(tabletSm) {
+      width: 100%;
+      align-items: center;
       justify-content: center;
-      @include resposive(tabletMd) {
-        width: 60%;
-      }
-      @include resposive(tabletSm) {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
+      text-align: center;
     }
+  }
 
-    &__title {
-      width: 100%;
-      max-width: 500px;
-      color: $primary-white;
-      align-self: flex-start;
-      @include resposive(tabletSm) {
-        max-width: 573px;
-        align-self: center;
-      }
-      @include resposive(mobileLg) {
-       max-width: 311px;
-       align-self: center;
-       font-size: $h1-responsive-size-lg;
-       letter-spacing: $h1-responsive-spacing-lg;
-      }
+  &__title {
+    width: 100%;
+    max-width: 500px;
+    color: $primary-white;
+    align-self: flex-start;
+    @include resposive(tabletSm) {
+      max-width: 573px;
+      align-self: center;
     }
+    @include resposive(mobileLg) {
+      max-width: 311px;
+      align-self: center;
+      font-size: $h1-responsive-size-lg;
+      letter-spacing: $h1-responsive-spacing-lg;
+    }
+  }
 
-    &__desc-btn {
-      margin-top: 4rem;
-    }
+  &__desc-btn {
+    margin-top: 4rem;
+  }
 
-    &__desc-text {
-      width: 100%;
-      max-width: 405px;
-      color: $primary-white;
-      @include resposive(tabletSm) {
-        max-width: 573px;
-      }
-      @include resposive(mobileLg) {
-        max-width: 311px;
-      }
+  &__desc-text {
+    width: 100%;
+    max-width: 405px;
+    color: $primary-white;
+    @include resposive(tabletSm) {
+      max-width: 573px;
     }
+    @include resposive(mobileLg) {
+      max-width: 311px;
+    }
+  }
 
-    &__btn {
-      margin-top: 4rem;
-    }
+  &__btn {
+    margin-top: 4rem;
+  }
 }
 
 /********** Services **********/
@@ -126,115 +127,114 @@
     padding-bottom: 9.2rem;
   }
 
-    &::after {
-      content: "";
-      width: 100%;
-      max-width: 70%;
-      min-height: 15px;
-      background: $light-gray;
-      position: absolute;
-      top: 200px;
-      left: 0;
-      z-index: -1;
-      @include resposive(tabletLg) {
-        max-width: 60%;
-      }
-      @include resposive(tabletSm) {
-        max-width: 785px;
-        transform: rotate(90deg);
-        left: -274px;
-      }
-      @include resposive(mobileLg) {
-        display: none;
-      }
+  &::after {
+    content: "";
+    width: 100%;
+    max-width: 70%;
+    min-height: 15px;
+    background: $light-gray;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: -1;
+    @include resposive(tabletLg) {
+      max-width: 60%;
+    }
+    @include resposive(tabletSm) {
+      max-width: 785px;
+      transform: rotate(90deg);
+      left: -274px;
+    }
+    @include resposive(mobileLg) {
+      display: none;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 3rem;
+    @include resposive(tabletSm) {
+      grid-template-columns: repeat(auto-fit, minmax(573px, 1fr));
+    }
+    @include resposive(mobileLg) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      place-items: center center;
+      row-gap: 4.8rem;
+      text-align: center;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 350px;
+
+    @include resposive(tabletSm) {
+      max-width: 573px;
+      display: flex;
+      align-items: center;
+      gap: 7.9rem;
+    }
+    @include resposive(mobileLg) {
+      max-width: 311px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.4rem;
     }
 
-    &__cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 3rem;
-      @include resposive(tabletSm) {
-        grid-template-columns: repeat(auto-fit, minmax(573px, 1fr));
-      }
-      @include resposive(mobileLg) {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        place-items: center center;
-        row-gap: 4.8rem;
-        text-align: center;
-      }
-    }
-
-    &__card {
+    &-head {
       width: 100%;
-      max-width: 350px;
-
-      @include resposive(tabletSm) {
-        max-width: 573px;
-        display: flex;
-        align-items: center;
-        gap: 7.9rem;
+      max-width: 96px;
+      min-height: 96px;
+      background: $yellov;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & img {
+        max-width: 42.5px;
+        min-width: 39px;
       }
+
       @include resposive(mobileLg) {
-        max-width: 311px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2.4rem;
-      }
-
-      &-head {
-        width: 100%;
-        max-width: 96px;
-        min-height: 96px;
-        background: $yellov;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        & {
+          max-width: 56px;
+          min-height: 56px;
+        }
         & img {
-          max-width: 42.5px;
-          min-width: 39px;
-        }
-
-        @include resposive(mobileLg) {
-          & {
-            max-width: 56px;
-            min-height: 56px;
-          }
-          & img {
-            max-width: 25px;
-            min-width: 19px;
-          }
+          max-width: 25px;
+          min-width: 19px;
         }
       }
-      &-body {
-        margin-top: 4rem;
-        @include resposive(mobileLg) {
-          margin-top: 0;
-        }
+    }
+    &-body {
+      margin-top: 4rem;
+      @include resposive(mobileLg) {
+        margin-top: 0;
       }
-      &-title {
-        width: 100%;
-        color: $dark-navy;
-        @include resposive(mobileLg) {
-          font-size: $h4-responsive-size;
-        }
-      }
-
-      &-desc {
-        width: 100%;
-        margin-top: 2.7rem;
+    }
+    &-title {
+      width: 100%;
+      color: $dark-navy;
+      @include resposive(mobileLg) {
+        font-size: $h4-responsive-size;
       }
     }
 
-
+    &-desc {
+      width: 100%;
+      margin-top: 2.7rem;
+    }
+  }
 }
 
 /********** Reverse **********/
 .reverse {
   padding-top: 5.3rem;
   padding-bottom: 1.7rem;
-  background: url(../../image/Ellipse.svg), url(../../image/Ellipse.svg), url(../../image/Ellipse.svg);
+  background: url(../../image/Ellipse.svg), url(../../image/Ellipse.svg),
+    url(../../image/Ellipse.svg);
   background-repeat: no-repeat;
   background-size: 445px 445px, 445px 445px, 445px 445px;
   background-position: 92vw 4vw, -27vw 36vw, 92vw 73vw;
@@ -307,16 +307,16 @@
       }
     }
   }
-&__content:nth-child(2n) {
-  .reverse__info {
-    .reverse__btn {
-      align-self: flex-start;
-      @include resposive(tabletMode) {
-        align-self: center;
+  &__content:nth-child(2n) {
+    .reverse__info {
+      .reverse__btn {
+        align-self: flex-start;
+        @include resposive(tabletMode) {
+          align-self: center;
+        }
       }
     }
   }
-}
   &__content > div {
     width: 50%;
     @include resposive(tabletMode) {

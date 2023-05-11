@@ -1,260 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- All css link -->
-  <!-- <link rel="stylesheet" href="css/main.css"> -->
-  <!-- All min css link -->
-  <link rel="stylesheet" href="./css/main.min.css">
-  <title>About</title>
-</head>
-<body>
-  <!-- Site Header -->
-  <header id="header" class="header">
-    <div class="header__container container">
-      <!-- Logo brand -->
-      <a class="header__brand" href="index.html">
-        <img class="header__brand-img" src="image/scoot.svg" alt="Logo Brand SVG" width="107.82" height="28.56">
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- All css link -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <!-- All min css link -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header id="header" class="header">
+      <div class="header__container container">
+        <!-- Logo brand -->
+        <a class="header__brand" href="index.html">
+          <img
+            class="header__brand-img"
+            src="image/scoot.svg"
+            alt="Logo Brand SVG"
+            width="107.82"
+            height="28.56"
+          />
+        </a>
 
-      <!-- Header content -->
-      <div class="header__content">
-        <!-- Navigation -->
-        <nav class="sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a href="about.html" class="sitenav__link" target="blank">About</a>
+        <!-- Header content -->
+        <div class="header__content">
+          <!-- Navigation -->
+          <nav class="sitenav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a href="about.html" class="sitenav__link" target="blank"
+                  >About</a
+                >
+              </li>
+              <li class="sitenav__item">
+                <a href="locations.html" class="sitenav__link" target="blank"
+                  >Location</a
+                >
+              </li>
+              <li class="sitenav__item">
+                <a href="careers.html" class="sitenav__link" target="blank"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Header btn -->
+          <a href="index.html" class="btn header__btn">Get Scootin</a>
+        </div>
+
+        <!-- Hamburg -->
+        <button class="toggle__btn hamburg__open-btn" onclick="changeImage()">
+          <img
+            id="hamburgopen"
+            src="image/hamburgopen.svg"
+            alt="Hamburg open"
+            width="19.69"
+            height="16"
+          />
+        </button>
+      </div>
+    </header>
+    <!-- /Site Header -->
+
+    <!-- Main -->
+    <main>
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="about__container container">
+          <h1 class="about__title">About</h1>
+        </div>
+      </section>
+      <!-- About -->
+
+      <!-- Suggestions -->
+      <section id="suggestions" class="suggestions">
+        <div class="suggestions__container container">
+          <div class="suggestions__content">
+            <div class="suggestions__info">
+              <h2 class="suggestions__title">Mobility for the digital era</h2>
+              <p class="suggestions__desc">
+                Getting around should be simple (and even fun!) for everyone. We
+                embrace technology to provide low cost, smart access to scooters
+                at your fingertips.
+              </p>
+            </div>
+            <div class="suggestions__image">
+              <img
+                src="image/AboutUser.jpg"
+                srcset="image/AboutUser.jpg 1x, image/AboutUser2x.jpg 2x"
+                alt="About user image"
+                class="suggestions__img"
+              />
+            </div>
+          </div>
+
+          <div class="suggestions__content">
+            <div class="suggestions__info">
+              <h2 class="suggestions__title">Better urban living</h2>
+              <p class="suggestions__desc">
+                We’re helping connect cities and bring people closer together.
+                Our scooters are also fully-electric and we offset the minimal
+                carbon footprint for each ride.
+              </p>
+            </div>
+            <div class="suggestions__image">
+              <img
+                src="image/AboutCity@2x.jpg"
+                srcset="image/AboutCity.jpg 1x, image/AboutCity@2x.jpg 2x"
+                alt="About citiy image"
+                class="suggestions__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Suggestions -->
+
+      <!-- Values -->
+      <section id="values" class="values">
+        <div class="values__container container">
+          <h1 class="values__info">Our values</h1>
+          <div class="cards">
+            <div class="card">
+              <div class="card__head">
+                <img
+                  src="image/Mobile2x.jpg"
+                  srcset="image/Mobile.jpg 1x, image/Mobile2x.jpg 2x"
+                  alt="Mobile image"
+                  class="card__img"
+                />
+                <span class="card__number">
+                  <h4 class="card__number-text">01</h4>
+                </span>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title">Our tech</h4>
+                <p class="card__desc">
+                  We’re using cutting edge technology to drive accessible urban
+                  transportation forward. Our fully electric scooters are a joy
+                  to ride!
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__head">
+                <img
+                  src="image/ScooterHuman.jpg"
+                  srcset="
+                    image/ScooterHuman.jpg   1x,
+                    image/ScooterHuman2x.jpg 2x
+                  "
+                  alt="Human scoter image"
+                  class="card__img"
+                />
+                <span class="card__number">
+                  <h4 class="card__number-text">02</h4>
+                </span>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title">Our integrity</h4>
+                <p class="card__desc">
+                  We are fully committed to deliver a great yet safe,
+                  sustainable micro-mobility experience in every city we serve.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__head">
+                <img
+                  src="image/Humans.jpg"
+                  srcset="image/Humans.jpg 1x, image/Humans2x.jpg 2x"
+                  alt="humans image"
+                  class="card__img"
+                />
+                <span class="card__number">
+                  <h4 class="card__number-text">03</h4>
+                </span>
+              </div>
+              <div class="card__body">
+                <h4 class="card__title">Our community</h4>
+                <p class="card__desc">
+                  We support every community we serve. All workers are paid a
+                  living wage based on their location and are Scoot employees.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Values -->
+
+      <!-- FAQS -->
+      <section id="faqs" class="faqs">
+        <div class="faqs__container container">
+          <h2 class="faqs__title">FAQs</h2>
+          <div class="faqs__info">
+            <div class="accordion">
+              <h3 class="accordion__title">How it works</h3>
+
+              <div class="accordion__content">
+                <div class="accordion__info">
+                  <h4 class="accordion__info-title">
+                    How do I download the app?
+                  </h4>
+                  <p class="accordion__info-desc">
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do it
+                    would be to click the relevant link at the bottom of this
+                    page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+                <div class="accordion__info">
+                  <h4 class="accordion__info-title">
+                    Can I find a nearby Scoots?
+                  </h4>
+                </div>
+                <div class="accordion__info">
+                  <h4 class="accordion__info-title">
+                    Do I need a license to ride?
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <h3 class="accordion__title">Safe driving</h3>
+
+              <div class="accordion__content">
+                <div class="accordion__info">
+                  <h4 class="accordion__info-title">Should I wear a helmet?</h4>
+                  <p class="accordion__info-desc">
+                    Yes, please do! All cities have different laws. But we
+                    strongly strongly strongly recommend always wearing a helmet
+                    regardless of the local laws. We like you and we want you to
+                    be as safe as possible while Scooting.
+                  </p>
+                </div>
+                <div class="accordion__info">
+                  <h4 class="accordion__info-title">
+                    How about the rules & regulations?
+                  </h4>
+                </div>
+                <div class="accordion__info">
+                  <h4 class="accordion__info-title">
+                    What if I damage my Scoot?
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- /Main -->
+
+    <!-- Site Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__top">
+        <div class="footer__top-container container">
+          <div class="footer__info">
+            <h2 class="footer__title">Sign up and Scoot off today</h2>
+          </div>
+          <div class="footer__store">
+            <a class="store">
+              <img
+                src="image/applelogo.svg"
+                alt="apple logo svg"
+                class="store__img"
+              />
+            </a>
+            <a class="store">
+              <img
+                src="image/googleplay.svg"
+                alt="google play svg"
+                class="store__img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-container container">
+          <!-- Footer logo -->
+          <a href="./index.html" class="footer__logo">
+            <img
+              src="image/footerlogo.svg"
+              alt="footer logo svg"
+              class="footer__img"
+            />
+          </a>
+
+          <!-- Footer nav -->
+          <nav class="footernav">
+            <ul class="footernav__list">
+              <li class="footernav__item">
+                <a href="about.html" class="footernav__link">About</a>
+              </li>
+              <li class="footernav__item">
+                <a href="locations.html" class="footernav__link">Location</a>
+              </li>
+              <li class="footernav__item">
+                <a href="careers.html" class="footernav__link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Socials -->
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z"
+                  />
+                </svg>
+              </a>
             </li>
-            <li class="sitenav__item">
-              <a href="locations.html" class="sitenav__link" target="blank">Location</a>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg
+                  width="24"
+                  height="20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z"
+                  />
+                </svg>
+              </a>
             </li>
-            <li class="sitenav__item">
-              <a href="careers.html" class="sitenav__link" target="blank">Careers</a>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <!-- Header btn -->
-        <a href="index.html" class="btn header__btn">Get Scootin</a>
-      </div>
-
-      <!-- Hamburg -->
-      <button class="toggle__btn hamburg__open-btn" onclick="changeImage()">
-        <img id="hamburgopen"  src="image/hamburgopen.svg" alt="Hamburg open" width="19.69" height="16">
-      </button>
-    </div>
-  </header>
-  <!-- /Site Header -->
-
-  <!-- Main -->
-  <main>
-    <!-- About -->
-    <section id="about" class="about">
-      <div class="about__container container">
-        <h1 class="about__title">
-          About
-        </h1>
-      </div>
-    </section>
-    <!-- About -->
-
-    <!-- Suggestions -->
-    <section id="suggestions" class="suggestions">
-      <div class="suggestions__container container">
-        <div class="suggestions__content">
-          <div class="suggestions__info">
-            <h2 class="suggestions__title">Mobility for the digital era</h2>
-            <p class="suggestions__desc">
-              Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.
-            </p>
-          </div>
-          <div class="suggestions__image">
-            <img src="image/AboutUser.jpg" srcset="image/AboutUser.jpg 1x, image/AboutUser2x.jpg 2x" alt="About user image" class="suggestions__img">
-          </div>
-        </div>
-
-        <div class="suggestions__content">
-          <div class="suggestions__info">
-            <h2 class="suggestions__title">Better urban living</h2>
-            <p class="suggestions__desc">
-              We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.
-            </p>
-          </div>
-          <div class="suggestions__image">
-            <img src="image/AboutCity@2x.jpg" srcset="image/AboutCity.jpg 1x, image/AboutCity@2x.jpg 2x" alt="About citiy image" class="suggestions__img">
-          </div>
         </div>
       </div>
-    </section>
-    <!-- /Suggestions -->
+    </footer>
+    <!-- /Site Footer -->
 
-    <!-- Values -->
-    <section id="values" class="values">
-      <div class="values__container container">
-        <h2 class="values__info">Our values</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="card__head">
-              <img src="image/Mobile2x.jpg" srcset="image/Mobile.jpg 1x, image/Mobile2x.jpg 2x" alt="Mobile image" class="card__img">
-              <span class="card__number">
-                <h4 class="card__number-text">01</h4>
-              </span>
-            </div>
-            <div class="card__body">
-              <h4 class="card__title">Our tech</h4>
-              <p class="card__desc">
-                We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__head">
-              <img src="image/ScooterHuman.jpg" srcset="image/ScooterHuman.jpg 1x, image/ScooterHuman2x.jpg 2x" alt="Human scoter image" class="card__img">
-              <span class="card__number">
-                <h4 class="card__number-text">02</h4>
-              </span>
-            </div>
-            <div class="card__body">
-              <h4 class="card__title">Our integrity</h4>
-              <p class="card__desc">
-                We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__head">
-              <img src="image/Humans.jpg" srcset="image/Humans.jpg 1x, image/Humans2x.jpg 2x" alt="humans image" class="card__img">
-              <span class="card__number">
-                <h4 class="card__number-text">03</h4>
-              </span>
-            </div>
-            <div class="card__body">
-              <h4 class="card__title">Our community</h4>
-              <p class="card__desc">
-                We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Values -->
-
-    <!-- FAQS -->
-    <section id="faqs" class="faqs">
-      <div class="faqs__container container">
-        <h2 class="faqs__title">FAQs</h2>
-        <div class="faqs__info">
-          <div class="accordion">
-            <h3 class="accordion__title">How it works</h3>
-
-            <div class="accordion__content">
-              <div class="accordion__info">
-                <h4 class="accordion__info-title">How do I download the app?</h4>
-                <p class="accordion__info-desc">
-                  To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
-                </p>
-              </div>
-              <div class="accordion__info">
-                <h4 class="accordion__info-title">Can I find a nearby Scoots?</h4>
-              </div>
-              <div class="accordion__info">
-                <h4 class="accordion__info-title">Do I need a license to ride?</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion">
-            <h3 class="accordion__title">Safe driving</h3>
-
-            <div class="accordion__content">
-              <div class="accordion__info">
-                <h4 class="accordion__info-title">Should I wear a helmet?</h4>
-                <p class="accordion__info-desc">
-                  Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
-                </p>
-              </div>
-              <div class="accordion__info">
-                <h4 class="accordion__info-title">How about the rules & regulations?</h4>
-              </div>
-              <div class="accordion__info">
-                <h4 class="accordion__info-title">What if I damage my Scoot?</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- /Main -->
-
-  <!-- Site Footer -->
-  <footer id="footer" class="footer">
-    <div class="footer__top">
-      <div class="footer__top-container container">
-        <div class="footer__info">
-          <h2 class="footer__title">Sign up and Scoot off today</h2>
-        </div>
-        <div class="footer__store">
-          <a class="store">
-            <img src="image/applelogo.svg" alt="apple logo svg" class="store__img">
-          </a>
-          <a class="store">
-            <img src="image/googleplay.svg" alt="google play svg" class="store__img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__bottom-container container">
-        <!-- Footer logo -->
-      <a href="./index.html" class="footer__logo">
-        <img src="image/footerlogo.svg" alt="footer logo svg" class="footer__img">
-      </a>
-
-      <!-- Footer nav -->
-      <nav class="footernav">
-        <ul class="footernav__list">
-          <li class="footernav__item">
-            <a href="about.html" class="footernav__link">About</a>
-          </li>
-          <li class="footernav__item">
-            <a href="locations.html" class="footernav__link">Location</a>
-          </li>
-          <li class="footernav__item">
-            <a href="careers.html" class="footernav__link">Careers</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Socials -->
-      <ul class="socials">
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0Z"/></svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg width="24" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z"/></svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001Z" fill="currentColor"/></svg>
-          </a>
-        </li>
-      </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- /Site Footer -->
-
-  <!-- JavaScript -->
-  <script src="js/app.js"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+  </body>
 </html>

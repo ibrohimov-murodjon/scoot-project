@@ -48,7 +48,7 @@
       @include resposive(mobileMd) {
         margin-top: 4.144rem;
         margin-left: 0;
-        text-align: center
+        text-align: center;
       }
       &__list {
         @include flex;

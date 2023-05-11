@@ -5,7 +5,8 @@
   @include starter;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -31,11 +32,13 @@ img {
   justify-content: center;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-a,button {
+a,
+button {
   display: inline-block;
   cursor: pointer;
 }
@@ -79,5 +82,5 @@ a {
     max-width: 620px;
     padding-left: 2rem;
     padding-right: 2rem;
-    }
+  }
 }
